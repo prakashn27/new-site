@@ -70,12 +70,16 @@ body {
    =================== */
 
 .header-container {
-    border-bottom: 15px solid #DFDED4;
+    border-bottom: 0px solid #DFDED4;
 }
-
+.header-container,
 .footer-container,
 .main aside {
     border-top: 4px solid #432F21;
+}
+
+.footer-container{
+    border-bottom: 4px solid #432F21;
 }
 
 .header-container,
@@ -87,7 +91,11 @@ body {
 .title {
     color: #432F21;
     font-family: 'Arvo', serif;
-    height: 15px;
+    height: 25px;
+}
+
+.head-container header a:hover {
+    color: #CA171B;
 }
 
 /* ==============
@@ -147,16 +155,22 @@ nav ul .nav-icon {
 }
 .main-container {
     background-color: #DFDED4;
+    color: #432F21;
+}
+
+.main-container .main-text {
+    text-align: center;
 }
 
 .main aside {
-    color: white;
+    color: 432F21;
     padding: 0px 5% 10px;
 }
 
 .footer-container footer {
     color: #432f21;
     padding: 20px 0;
+    text-align: center;
 }
 
 /* ===============
@@ -393,4 +407,15 @@ nav ul .nav-icon {
 /*Custom effects*/
 title-header {
     text-decoration: none;
+}
+
+.main-text{
+    font-size: 20px;
+}
+
+aside ul {
+    list-style: none;
+}
+aside ul li a:hover {
+    color: #CA171B;
 }
